@@ -1590,41 +1590,44 @@
           }
         }
       },
-      "Applications/1.0.0": {
+      "ProjetoClean.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Domain": "1.0.0"
+          "ProjetoClean.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Applications.dll": {}
+          "bin/placeholder/ProjetoClean.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Applications.dll": {}
+          "bin/placeholder/ProjetoClean.Application.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "ProjetoClean.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/ProjetoClean.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/ProjetoClean.Domain.dll": {}
         }
       },
-      "Infrastructure/1.0.0": {
+      "ProjetoClean.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Applications": "1.0.0",
-          "Domain": "1.0.0"
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+          "ProjetoClean.Application": "1.0.0",
+          "ProjetoClean.Domain": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.4.0"
         },
         "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/ProjetoClean.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/ProjetoClean.Infrastructure.dll": {}
         }
       }
     }
@@ -4550,31 +4553,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Applications/1.0.0": {
+    "ProjetoClean.Application/1.0.0": {
       "type": "project",
-      "path": "../Applications/Applications.csproj",
-      "msbuildProject": "../Applications/Applications.csproj"
+      "path": "../Applications/ProjetoClean.Application.csproj",
+      "msbuildProject": "../Applications/ProjetoClean.Application.csproj"
     },
-    "Domain/1.0.0": {
+    "ProjetoClean.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain/ProjetoClean.Domain.csproj",
+      "msbuildProject": "../Domain/ProjetoClean.Domain.csproj"
     },
-    "Infrastructure/1.0.0": {
+    "ProjetoClean.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "path": "../Infrastructure/ProjetoClean.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/ProjetoClean.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Applications >= 1.0.0",
-      "Domain >= 1.0.0",
-      "Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
+      "ProjetoClean.Application >= 1.0.0",
+      "ProjetoClean.Domain >= 1.0.0",
+      "ProjetoClean.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4584,9 +4587,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\WebApi.csproj",
-      "projectName": "WebApi",
-      "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\ProjetoClean.WebApi.csproj",
+      "projectName": "ProjetoClean.WebApi",
+      "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\ProjetoClean.WebApi.csproj",
       "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
@@ -4606,14 +4609,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
-              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj"
+            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
+              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj"
             },
-            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj"
+            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj": {
+              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj"
             },
-            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj"
             }
           }
         }

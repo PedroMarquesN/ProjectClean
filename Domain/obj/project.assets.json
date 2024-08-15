@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj",
-      "projectName": "Domain",
-      "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj",
+      "projectName": "ProjetoClean.Domain",
+      "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj",
       "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\obj\\",
       "projectStyle": "PackageReference",

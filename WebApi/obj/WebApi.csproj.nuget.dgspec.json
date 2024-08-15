@@ -4,12 +4,12 @@
     "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
+    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj",
-        "projectName": "Applications",
-        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj",
+        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj",
+        "projectName": "ProjetoClean.Application",
+        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj",
         "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\obj\\",
         "projectStyle": "PackageReference",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj"
               }
             }
           }
@@ -69,12 +69,12 @@
         }
       }
     },
-    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
+    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj",
+        "projectName": "ProjetoClean.Domain",
+        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj",
         "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -130,12 +130,12 @@
         }
       }
     },
-    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj",
+        "projectName": "ProjetoClean.Infrastructure",
+        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -155,11 +155,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj"
               },
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj"
               }
             }
           }
@@ -178,6 +178,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -223,14 +249,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj"
               },
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\ProjetoClean.Domain.csproj"
               },
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\ProjetoClean.Infrastructure.csproj"
               }
             }
           }

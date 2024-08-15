@@ -4,12 +4,12 @@
     "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
+    "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj",
-        "projectName": "Applications",
-        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj",
+        "projectUniqueName": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj",
+        "projectName": "ProjetoClean.Application",
+        "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj",
         "packagesPath": "C:\\Users\\w10-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\obj\\",
         "projectStyle": "PackageReference",
@@ -155,8 +155,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj": {
-                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\Applications.csproj"
+              "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj": {
+                "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Applications\\ProjetoClean.Application.csproj"
               },
               "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\w10-\\source\\repos\\ProjetoClean\\Domain\\Domain.csproj"
@@ -178,6 +178,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
