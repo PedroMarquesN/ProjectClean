@@ -1,6 +1,8 @@
-﻿namespace ProjetoClean.Domain.Entities;
+﻿using ProjetoClean.Domain.Entities.Common;
 
-public class Profile
+namespace ProjetoClean.Domain.Entities;
+
+public class Profile : BaseDomainEntity
 {
     public long Id { get; set; }
     public string Name { get; set; } = string.Empty;
