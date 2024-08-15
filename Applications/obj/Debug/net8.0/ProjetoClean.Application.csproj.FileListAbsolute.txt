@@ -1,0 +1,16 @@
+C:\Users\w10-\source\repos\ProjetoClean\Applications\bin\Debug\net8.0\ProjetoClean.Application.deps.json
+C:\Users\w10-\source\repos\ProjetoClean\Applications\bin\Debug\net8.0\ProjetoClean.Application.dll
+C:\Users\w10-\source\repos\ProjetoClean\Applications\bin\Debug\net8.0\ProjetoClean.Application.pdb
+C:\Users\w10-\source\repos\ProjetoClean\Applications\bin\Debug\net8.0\ProjetoClean.Domain.dll
+C:\Users\w10-\source\repos\ProjetoClean\Applications\bin\Debug\net8.0\ProjetoClean.Domain.pdb
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.csproj.AssemblyReference.cache
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.AssemblyInfoInputs.cache
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.AssemblyInfo.cs
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.csproj.CoreCompileInputs.cache
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.sourcelink.json
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoC.32E3B104.Up2Date
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.dll
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\refint\ProjetoClean.Application.dll
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ProjetoClean.Application.pdb
+C:\Users\w10-\source\repos\ProjetoClean\Applications\obj\Debug\net8.0\ref\ProjetoClean.Application.dll
