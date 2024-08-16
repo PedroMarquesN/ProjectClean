@@ -10,4 +10,5 @@ public class LoginModel
     [Required(ErrorMessage = "invalid")]
     [DataType(DataType.Password)]
     public string Password { get; set; }
+
 }

@@ -10,3 +10,4 @@ C:\Users\w10-\source\repos\ProjetoClean\Domain\obj\Debug\net8.0\ProjetoClean.Dom
 C:\Users\w10-\source\repos\ProjetoClean\Domain\obj\Debug\net8.0\refint\ProjetoClean.Domain.dll
 C:\Users\w10-\source\repos\ProjetoClean\Domain\obj\Debug\net8.0\ProjetoClean.Domain.pdb
 C:\Users\w10-\source\repos\ProjetoClean\Domain\obj\Debug\net8.0\ref\ProjetoClean.Domain.dll
+C:\Users\w10-\source\repos\ProjetoClean\Domain\obj\Debug\net8.0\ProjetoClean.Domain.csproj.AssemblyReference.cache

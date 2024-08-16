@@ -1,4 +1,6 @@
-﻿namespace ProjetoClean.Domain.Entities;
+﻿using ProjetoClean.Domain.Enums;
+
+namespace ProjetoClean.Domain.Entities;
 
 public class User
 {
@@ -7,7 +9,11 @@ public class User
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
 
-    public Guid UserIndentifier { get; set; } = Guid.NewGuid();
+    public User(string email, string password)
+    {
+        Email = email;
+        Password = password;
+    }
 
-    public string Role { get; set; } = string.Empty;
+    public string Role { get; set; } = Roles.TEAM_MEMBER;
 }

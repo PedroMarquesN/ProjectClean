@@ -147,3 +147,4 @@ C:\Users\w10-\source\repos\ProjetoClean\WebApi\bin\Debug\net8.0\Microsoft.AspNet
 C:\Users\w10-\source\repos\ProjetoClean\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\w10-\source\repos\ProjetoClean\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\w10-\source\repos\ProjetoClean\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\w10-\source\repos\ProjetoClean\WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

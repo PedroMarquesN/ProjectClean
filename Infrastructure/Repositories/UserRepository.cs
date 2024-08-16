@@ -14,9 +14,32 @@ public class UserRepository : IUserRepository
         _context = context;
     }
 
+    public async Task AddUser(User user)
+    {
+        try
+        {
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+          
+            Console.WriteLine(ex.InnerException?.Message);
+            throw;
+        }
+    }
+
+    public Task<List<User>> GetAllUsers()
+    {
+        return _context.Users.ToListAsync();
+    }
+
     public async Task<User> GetUserByEmailAsync(string email)
     {
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
+
+
+    
 
 }

@@ -38,6 +38,9 @@ namespace ProjetoClean.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -79,9 +82,6 @@ namespace ProjetoClean.Infrastructure.Migrations
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("UserIndentifier")
-                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 

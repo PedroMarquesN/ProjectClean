@@ -57,6 +57,7 @@ public class TokenController : ControllerBase
         {
             new Claim("email", userInfo.Email),
             new Claim("meuvalor", "etcetc"),
+            new Claim(ClaimTypes.Role, "ADMIN"),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 
