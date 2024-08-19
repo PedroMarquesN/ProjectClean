@@ -75,6 +75,9 @@ namespace ProjetoClean.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
                     b.ToTable("Profiles");
                 });
 
@@ -94,35 +97,29 @@ namespace ProjetoClean.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("ProfileId")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProfileId")
-                        .IsUnique();
-
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("ProjetoClean.Domain.Entities.User", b =>
-                {
-                    b.HasOne("ProjetoClean.Domain.Entities.Profile", "Profile")
-                        .WithOne("User")
-                        .HasForeignKey("ProjetoClean.Domain.Entities.User", "ProfileId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Profile");
                 });
 
             modelBuilder.Entity("ProjetoClean.Domain.Entities.Profile", b =>
                 {
-                    b.Navigation("User")
+                    b.HasOne("ProjetoClean.Domain.Entities.User", "User")
+                        .WithOne("Profile")
+                        .HasForeignKey("ProjetoClean.Domain.Entities.Profile", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ProjetoClean.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Profile")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

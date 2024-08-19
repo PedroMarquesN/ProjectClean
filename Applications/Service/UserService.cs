@@ -26,7 +26,7 @@ public class UserService : IUserService
         return users.Select(u => new UserDto
         {
             Id = u.Id,
-            Name = u.Profile?.Name,
+            Name = u.Profile?.Name ?? string.Empty,
             Email = u.Email,
             Role = u.Role.ToString()
         }).ToList();

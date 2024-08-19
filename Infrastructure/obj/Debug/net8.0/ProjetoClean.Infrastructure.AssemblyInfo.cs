@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoClean.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c1424911da7464864094d26d0f8095d55c87c31")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+140818c87e4e4d59ba2697e992a6cbb1d579bdc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoClean.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoClean.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
