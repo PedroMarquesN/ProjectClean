@@ -6,4 +6,5 @@ public interface IUserService
 {
     Task RegisterUser(RegisterUserDto userDto);
     Task<List<UserDto>> GetAllUsers();
+    Task RemoveUser(long userId);
 }

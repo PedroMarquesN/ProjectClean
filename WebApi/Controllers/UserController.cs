@@ -47,6 +47,21 @@ public class UserController : ControllerBase
         }
     }
 
+    [HttpDelete("{userId}")]
+    [Authorize(Roles = "ADMIN")]
+    public async Task<IActionResult> RemoveUser([FromRoute] long userId)
+    {
+        try
+        {
+            await _userService.RemoveUser(userId);
+            return StatusCode(StatusCodes.Status200OK, "Usuário removido com sucesso.");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+        }
+    }
+
 
 
 }

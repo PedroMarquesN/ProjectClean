@@ -18,7 +18,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IAuthenticate, AuthenticateService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IPasswordEncripter, PasswordEncripter>();
+builder.Services.AddScoped<IPageWebRepository, PageWebRepository>();
+builder.Services.AddScoped<IPageWebService, PageWebService>();
 
 
 

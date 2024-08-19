@@ -29,9 +29,10 @@ public class UserRepository : IUserRepository
         }
     }
 
-    public Task<List<User>> GetAllUsers()
+    public async Task<List<User>> GetAllUsers()
     {
-        return _context.Users.ToListAsync();
+
+        return await _context.Users.Include(u => u.Profile).ToListAsync();
     }
 
     public async Task<User> GetUserByEmailAsync(string email)
@@ -40,6 +41,27 @@ public class UserRepository : IUserRepository
     }
 
 
-    
+    public async Task<User> GetUserByIdAsync(long id) 
+    {
+        return await _context.Users.FindAsync(id);
+    }
 
+    public async Task UpdateUser(User user)
+    {
+        _context.Users.Update(user);
+        await _context.SaveChangesAsync();
+    }
+    public async Task RemoveUser(User user)
+    {
+        try
+        {
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+        }
+        catch(Exception e)
+        {
+            throw new Exception(e.Message);
+        }
+ 
+    }
 }
