@@ -9,11 +9,19 @@ using ProjetoClean.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Adiciona o serviço de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
 
 builder.Services.AddScoped<IAuthenticate, AuthenticateService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -24,20 +32,16 @@ builder.Services.AddScoped<IPasswordEncripter, PasswordEncripter>();
 builder.Services.AddScoped<IPageWebRepository, PageWebRepository>();
 builder.Services.AddScoped<IPageWebService, PageWebService>();
 
-
-
-
 builder.Services.AddDependencyInjectionJWT(builder.Configuration);
-// Add services to the container.
 
+// Adiciona serviços ao contêiner.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddInfrastructureSwagger();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configura o pipeline de requisição HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -45,11 +49,14 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseStatusCodePages();
 app.UseRouting();
+// Adiciona o middleware de CORS
+app.UseCors("AllowAllOrigins");
 app.UseAuthentication();
 app.UseAuthorization();
+
+
 
 app.MapControllers();
 

@@ -1,4 +1,5 @@
-﻿using ProjetoClean.Domain.Interfaces;
+﻿using ProjetoClean.Domain.Entities;
+using ProjetoClean.Domain.Interfaces;
 using ProjetoClean.Domain.Security.Cryptography;
 
 namespace ProjetoClean.Application.Service;
@@ -14,16 +15,14 @@ public class AuthenticateService : IAuthenticate
         _passwordEncripter = passwordEncripter;
     }
 
-    public async Task<bool> Authenticate(string email, string password)
+    public async Task<User> Authenticate(string email, string password)
     {
         var user = await _userRepository.GetUserByEmailAsync(email);
-        if (user == null)
+        if (user == null || !_passwordEncripter.VerifyPassword(user.Password, password))
         {
-            return false;
+            return null;
         }
 
-        // Verifique se a senha corresponde (você pode usar hashing de senha aqui)
-
-        return _passwordEncripter.VerifyPassword(user.Password, password);
+        return user; // Retorna o objeto User se a autenticação for bem-sucedida
     }
 }

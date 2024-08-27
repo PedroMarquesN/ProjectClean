@@ -5,7 +5,7 @@ using ProjetoClean.Application.Interfaces;
 using ProjetoClean.Domain.Interfaces;
 namespace ProjetoClean.WebApi.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/user")]
 [ApiController]
 public class UserController : ControllerBase
 {
@@ -47,7 +47,7 @@ public class UserController : ControllerBase
         }
     }
 
-    [HttpDelete("{userId}")]
+    [HttpDelete("/delete/{userId}")]
     [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> RemoveUser([FromRoute] long userId)
     {

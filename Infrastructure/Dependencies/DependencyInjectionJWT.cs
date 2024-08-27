@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using ProjetoClean.Domain.Enums;
 using System.Text;
 
 
@@ -38,7 +39,7 @@ public static class DependencyInjectionJWT
 
         services.AddAuthorization(options =>
         {
-            options.AddPolicy("AdminPolicy", policy => policy.RequireRole("ADMIN"));
+            options.AddPolicy("AdminPolicy", policy => policy.RequireRole(Roles.ADMIN.ToString()));
         });
         services.AddControllers();
 

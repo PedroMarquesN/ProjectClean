@@ -17,5 +17,5 @@ public class User
         Password = password;
     }
 
-    public string Role { get; set; } = Roles.TEAM_MEMBER;
+    public string Role { get; set; } = Roles.TEAM_MEMBER.ToString();
 }
